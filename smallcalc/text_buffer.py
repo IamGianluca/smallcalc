@@ -53,8 +53,7 @@ class TextBuffer:
         self.column = 0
 
     def goto(self, line, column=0):
-        self.line = line
-        self.column = column
+        self.line, self.column = line, column
 
     def skip(self, lines=1):
         self.column += lines
